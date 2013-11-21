@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SMS Gobbler</string>
+    <string name="splash_button">Go!</string>
+    <string name="splash_title">SMS\nGobbler</string>
+    <string name="title_activity_number_filter">Number Filter</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="action_settings">Settings</string>
+    <string name="filter_manager_label">SMS Gobbler Filter Manager</string>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- This array is the tab heading for each of the available filters
+     accessed via the filter manager -->
+    <string-array name="available_filters">
+        <item>Number Filter</item>
+        <item>Other Filters</item>
+    </string-array>
+
+
+</resources>
