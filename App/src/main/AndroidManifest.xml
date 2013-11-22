@@ -6,10 +6,11 @@
 
     <uses-sdk
         android:minSdkVersion="11"
-        android:targetSdkVersion="19" />
+        android:targetSdkVersion="16" />
 
-    <uses-permission android:name="android.permission.READ_SMS"/>
     <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <!--uses-permission android:name="android.permission.WRITE_SMS"/-->
+    <!--uses-permission android:name="android.permission.READ_SMS"/-->
 
     <application
         android:allowBackup="true"
@@ -31,13 +32,16 @@
 
         <activity
             android:name=".main.FilterManagerActivity"
-            android:label="@string/filter_manager_label" />
+            android:label="@string/filter_manager_label">
+        </activity>
 
         <receiver android:name=".receivers.SMSBroadcastReceiver" android:exported="true">
-            <intent-filter android:priority="1000">
+            <intent-filter android:priority="2147483647">
+                <category android:name="android.intent.category.DEFAULT" />
                 <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
             </intent-filter>
         </receiver>
+
 
     </application>
 
